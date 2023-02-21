@@ -1,5 +1,5 @@
 # Rancher-Prov-Stack
-A collection of tools to provision rancher clusters easily
+A collection of tools to provision rancher clusters easily.
 
 Please fill out the variables in the `variables.sh` file.
 ```
@@ -16,3 +16,9 @@ export TF_VAR_ssh_private_key_path=
 ```
 
 Also, if want to use a specific kubernetes version, you need to fill out the `kubernetes_version:` in the `cluster.yml.tpl` file
+
+### Requirements
+Requires rke and terraform to be installed. See below for the installation tutorials.
+
+https://rancher.com/docs/rke/latest/en/installation/
+https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
