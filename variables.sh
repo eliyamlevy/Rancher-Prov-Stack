@@ -7,4 +7,5 @@ export TF_VAR_aws_prefix=""
 export TF_VAR_aws_key_name=""
 export TF_VAR_node_count=3
 # ssh info
+export TF_VAR_ssh_private_key_path=""
 export TF_VAR_ssh_public_key_path=""

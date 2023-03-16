@@ -74,7 +74,7 @@ resource "aws_security_group" "sg" {
   }
 }
 
-resource "aws_key_pair" "eli_dev_auth" {
+resource "aws_key_pair" "tf_public_key" {
   key_name   = var.aws_key_name
   public_key = file("${var.ssh_public_key_path}")
 }
