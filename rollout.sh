@@ -24,9 +24,7 @@ case $1 in
 
     helm)
         
-        # export KUBECONFIG=`pwd`/kube_config_tf-rke-config.yaml
-        unset KUBECONFIG
-
+        export KUBECONFIG=`pwd`/kube_config_tf-rke-config.yaml
 
         helm repo add rancher-latest https://releases.rancher.com/server-charts/latest
 
@@ -65,7 +63,7 @@ case $1 in
                 echo "Tag $2 exists, installing rancher now"
                 helm upgrade --install rancher rancher-latest/rancher \
                 --namespace cattle-system \
-                --set hostname="eli.eng.rancher.space" \
+                --set hostname="eli2.eng.rancher.space" \
                 --set bootstrapPassword=admin \
                 --set rancherImageTag=$2  
             else

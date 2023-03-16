@@ -76,5 +76,5 @@ resource "aws_security_group" "sg" {
 
 resource "aws_key_pair" "eli_dev_auth" {
   key_name   = var.aws_key_name
-  public_key = file("${var.ssh_private_key_path}")
+  public_key = file("${var.ssh_public_key_path}")
 }
